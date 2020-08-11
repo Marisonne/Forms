@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>Forms</header>
+
+    <div>
+      <form action="#" method="GET">
+        <fieldset>
+          <legend>Personal Data</legend>
+
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" />
+
+          <label for="lname">Last name:</label>
+          <input type="text" name="lname" id="lname" />
+
+          <label for="street">Street:</label>
+          <input type="text" name="street" id="street" />
+
+          <label for="code">Zipcode:</label>
+          <input type="number" name="code" id="code" />
+
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" />
+
+          <label for="phone">Phone:</label>
+          <input type="number" name="phone" id="phone" />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" cols="60" rows="10">
+Tell us more about important colors,etc.</textarea
+          >
+          <br />
+        </fieldset>
+      </form>
+
+      <!-- second form -->
+
+      <form action="#" method="GET">
+        <fieldset>
+          <legend>Products</legend>
+
+          <h4>Web Design</h4>
+
+          <input
+            type="radio"
+            name="design"
+            value="Individual"
+            id="individual"
+            class="no"
+            checked
+          />
+          <label for="individual">Individual</label>
+          <input
+            type="radio"
+            name="design"
+            value="Template"
+            id="template"
+            class="no"
+          />
+          <label for="template">Template</label>
+          <br />
+
+          <h4>Web Development:</h4>
+          <br />
+          <input type="checkbox" id="web" name="web" value="web" class="no" />
+          <label for="web">HTML & CSS</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="jscript"
+            name="jscript"
+            value="jscript"
+            class="no"
+          />
+          <label for="jscript">JavaScript</label>
+          <br />
+
+          <input type="checkbox" id="DB" name="DB" value="DB" class="no" />
+          <label for="DB">MongoDB</label>
+          <br />
+
+          <h4>Project Start:</h4>
+          <input type="date" name="sdate" id="sdate" />
+          <br />
+
+          <h4>Project End:</h4>
+          <input type="date" name="edate" id="edate" />
+          <br />
+
+          <h4 for="category">Category:</h4>
+
+          <select name="category" id="category" class="category">
+            <option value="person">Personal</option>
+            <option value="location">Location</option>
+            <option value="work">Work time</option>
+          </select>
+          <br />
+          <br />
+        </fieldset>
+        <input type="button" class="button" value="Order our servies" />
+      </form>
+    </div>
+  </body>
+</html>
